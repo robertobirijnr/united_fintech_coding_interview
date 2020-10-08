@@ -2,10 +2,10 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import DashboardLayout from 'src/layouts/DashboardLayout';
 import MainLayout from 'src/layouts/MainLayout';
-import CustomerListView from 'src/views/customer/CustomerListView';
+import CustomerListView from 'src/views/jobsite/JobsiteView';
 import DashboardView from 'src/views/Dashboard';
 import NotFoundView from 'src/views/errors/NotFoundView';
-import SettingsView from 'src/views/settings/SettingsView';
+import SettingsView from 'src/views/settings';
 
 const routes = [
   {

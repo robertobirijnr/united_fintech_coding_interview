@@ -14,6 +14,7 @@ import {
 } from '@material-ui/core';
 import MobileRightDrawer from '@material-ui/core/Drawer';
 import { Search as SearchIcon } from 'react-feather';
+import Modal from 'src/components/jobsite_modal';
 
 const useStyles = makeStyles((theme) => ({
   menustyle: {
@@ -62,10 +63,10 @@ const Toolbar = () => {
       <Typography variant="h4" className={classes.title}>Job sites</Typography>
       <Divider />
       <List style={{ paddingLeft: '60px' }}>
-        <Button variant="contained" color="primary" disableElevation>
+        {/* <Button variant="contained" color="primary" disableElevation>
           Add a Job site
-        </Button>
-
+        </Button> */}
+        <Modal />
       </List>
       <Box style={{ paddingLeft: '30px' }}>
         <TextField
