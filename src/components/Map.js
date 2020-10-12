@@ -24,7 +24,7 @@ class Map extends React.Component {
     area: '',
     state: '',
     zoom: 15,
-    height: 700,
+    height: 600,
     mapPosition: {
       lat: 0,
       lng: 0,
@@ -185,16 +185,12 @@ onPlaceSelected = (place) => {
 };
 
 render() {
-  const mapStyles = {
-    width: '100%',
-    height: '100vh',
-  };
   const AsyncMap = withScriptjs(
     withGoogleMap(
       () => (
         <GoogleMap
           defaultZoom={this.state.zoom}
-          style={mapStyles}
+          height={this.state.height}
           defaultCenter={{ lat: this.state.mapPosition.lat, lng: this.state.mapPosition.lng }}
         >
           {/* InfoWindow on top of marker */}

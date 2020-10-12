@@ -26,7 +26,7 @@ const CustomerListView = (props) => {
   return (
     <Page
       className={classes.root}
-      title="Customers"
+      title="jobsites"
     >
       <Container maxWidth={false}>
         <Toolbar />
